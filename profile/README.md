@@ -31,3 +31,7 @@ Paper trade chatbot 除以上微服務外，也包含相關repo
 * `mysql` 各microservice各自有其schema，便於拆分db使用量
 * `redis` 儲存暫存資料與處理水平擴展的service間溝通
 * `rabbitmq` 擺放資料的queue，應付大量訂單情形
+
+### 流程
+
+![image](https://github.com/paper-trade-chatbot/.github/blob/main/profile/order%20process.jpg?raw=true)
