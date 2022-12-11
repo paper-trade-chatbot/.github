@@ -1,6 +1,6 @@
 # paper trade chatbot
 
-Paper trade chatbot 是一個模擬股票交易的系統，使用golang撰寫與kubernetes架設，利用micro service架構結合mysql, redis, rabbitmq等資源架設，使用者可以註冊會員、檢視股票票價與走勢、出入金、開倉平倉等。
+Paper trade chatbot 是一個模擬股票交易的系統，使用golang撰寫與kubernetes架設，利用microservice架構結合mysql, redis, rabbitmq等資源架設，使用者可以註冊會員、檢視股票票價與走勢、出入金、開倉平倉等。k8s配合redis具有便於水平擴展的特性。
 
 ### 微服務
 
@@ -23,4 +23,11 @@ Paper trade chatbot 除以上微服務外，也包含相關repo
 
 * `k8s` kubernetes設定檔、架設腳本
 * `common` 所有microservice共用的golang程式碼
-* ``
+* `proto` 所有microservice共用的protobuf與產生的golang package
+* `pubsub` 所有microservice共用的rabbitmq串接與傳輸格式
+
+### 資源
+
+* `mysql` 各microservice各自有其schema，便於拆分db使用量
+* `redis` 儲存暫存資料與處理水平擴展的service間溝通
+* `rabbitmq` 擺放資料的queue，應付大量訂單情形
