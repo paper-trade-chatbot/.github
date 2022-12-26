@@ -35,3 +35,8 @@ Paper trade chatbot 除以上微服務外，也包含相關repo
 ### 流程
 
 ![image](https://github.com/paper-trade-chatbot/.github/blob/main/profile/order%20process.jpg?raw=true)
+
+---
+
+## 開發者
+以上程式商業邏輯與相關工具開發來自 [Josh](https://github.com/lisyaoran51)
