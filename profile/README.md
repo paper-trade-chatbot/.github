@@ -18,14 +18,12 @@ Paper trade chatbot 包含以下微服務：
 * `order` 下單開倉、平倉
 * `match` 即時撮合訂單
 * `wallet` 用戶錢包資料
-* `api` 提供RESTful API供外部使用
 
 ### 其他repo
 
 Paper trade chatbot 除以上微服務外，也包含相關repo
 
 * `k8s` kubernetes設定檔、架設腳本
-* `common` 所有microservice共用的golang程式碼
 * `proto` 所有microservice共用的protobuf與產生的golang package
 * `pubsub` 所有microservice共用的rabbitmq串接與傳輸格式
 
