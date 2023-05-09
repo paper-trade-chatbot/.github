@@ -9,7 +9,7 @@ Paper trade chatbot 是一個模擬股票交易的系統，使用golang撰寫與
 
 Paper trade chatbot 包含以下微服務：
 
-* `api` 提供統一api接口（尚未完成）
+* `api` 提供統一api接口（目前想把API分散到各個service各自開API，因此暫時刪掉api service）
 * `member` 用戶註冊、用戶資料、用戶群組
 * `quote` 股票票價即時報價
 * `candle` K線紀錄
@@ -40,4 +40,4 @@ Paper trade chatbot 除以上微服務外，也包含相關repo
 ---
 
 ## 開發者
-以上程式商業邏輯與相關工具開發來自 [Josh](https://github.com/lisyaoran51), 系統設計架構參考101投資平台, 並優化訂單處理流程
+以上程式商業邏輯與相關工具開發來自 [Josh](https://github.com/lisyaoran51), 系統設計架構參考101投資平台, 重新撰寫並優化訂單處理流程
